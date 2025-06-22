@@ -1,0 +1,24 @@
+// src/store/modules/recommend.ts
+export interface Banner {
+  imageUrl: string
+  // 其他字段可补充
+}
+
+interface RecommendState {
+  banners: Banner[]
+}
+
+const initialState: RecommendState = {
+  banners: []
+}
+
+export default function recommendReducer(
+  state = initialState,
+  action: any
+): RecommendState {
+  switch (action.type) {
+    // 你的action
+    default:
+      return state
+  }
+}
