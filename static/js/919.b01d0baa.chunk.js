@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwqy_ts_react_music=self.webpackChunkwqy_ts_react_music||[]).push([[919],{9300:(s,e,t)=>{t.r(e),t.d(e,{default:()=>a});var c=t(5043),r=t(579);const u=()=>(0,r.jsx)("div",{children:"Artist"}),a=(0,c.memo)(u)}}]);
+//# sourceMappingURL=919.b01d0baa.chunk.js.map
