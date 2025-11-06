@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
 
-  "homepage": "https://wu7yi.github.io/wqy_ts_react_music",
+  "homepage": "https://jonwaldron.github.io/wqy_ts_react_music",
+
 
   "proxy": "http://localhost:3001",
   "dependencies": {
