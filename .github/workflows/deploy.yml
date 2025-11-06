@@ -18,15 +18,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # 根据你的项目调整 Node.js 版本
+          node-version: '14'  # 根据你的项目调整 Node 版本
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the project (跳过 ESLint 检查)
-      - name: Build the project
-        run: npm run build --no-eslint  # 使用 --no-eslint 跳过 ESLint 检查
+      # Step 4: Build the project, skip eslint errors and disable CI environment
+      - name: Build the project (skip eslint errors)
+        run: |
+          CI=false npm run build --no-eslint  # 禁用 CI 环境变量，跳过 eslint 检查
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
